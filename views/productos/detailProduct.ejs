@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHALTU Bags </title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/997049d577.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+    <header class = "top-header"> 
+        <a href="#main">ir al contenido principal </a>
+        <div class = "logoybarra">
+        <img src="../images/logo_chaltu_bags.jpg" class = "logo"  alt="logo">
+        <h1>
+            CHALTU Bags
+        </h1>
+        
+        <div class="form" action="#" method="GET" role="search">
+            <div class="input">Buscar mochilas, Riñoneras y más<i class="fa fa-search"></i></div>
+          </i>
+        </div>
+        <h2>
+            <div class="compraencuotas"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y con tarjeta de crédito de todos los bancos</div>
+        </h2>
+        </div>
+<!-- site navbar -->
+           <%- include('../partial/navbar') -%>
+    
+</header>
+
+<main>
+    <section id="main">
+        
+        
+        <div class = "listado">
+            <h2><%= producto.articulo %> </h2>
+                <h3> <%= producto.modelo %> </h3>
+                  
+            <article>
+                <!-- <img src="../images/riñonera_ala.jpg" alt="Riñonera Ala"> -->
+                <div class="main-article">
+                    <p class="precio"> $ <%= producto.precio %> </p>
+                    <i class="fas fa-truck"></i>                
+                <h4 class="descripcion"><%= producto.descripcion %> </h4>
+            </div>            
+            </article>
+
+ </div>
+<div class="botones">
+    
+     
+    <a href = "/productos/<%=producto.id%>/edit"><button class = "boton">Editar Producto</button></a>
+    <form action="<%= producto.id %>?_method=DELETE" method="POST">
+    <button type="submit" class = "boton">Eliminar</button>
+</form>
+</div>
+    </section>
+</main>
+<!-- footer -->
+<%- include('../partial/footer') -%>
+</body>
+</html>

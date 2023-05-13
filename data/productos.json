@@ -1,0 +1,15 @@
+[
+ {
+  "id": 5,
+  "articulo": "riñonera",
+  "modelo": "lisa",
+  "precio": "5439"
+ },
+ {
+  "id": 8,
+  "articulo": "mini bags",
+  "modelo": "Piedra",
+  "descripcion": "producto comodo y liviano ",
+  "precio": "5434"
+ }
+]
