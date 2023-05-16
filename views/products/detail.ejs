@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción de Producto </title>
+
+    <link rel="stylesheet" type="text/css" href="../css/detalle.css">
+
+
+</head>
+<body>
+    
+
+ 
+ 
+ 
+    <header class = "top-header"> 
+        <a href="#irContenido">ir al contenido principal </a>
+        <div class = "logoybarra">
+        <img src="../images/logo_chaltu_bags.jpg" class = "logo"  alt="logo">
+        <h1>
+            CHALTU Bags
+        </h1>
+        
+        <div class="form" action="#" method="GET" role="search">
+            <div class="input">Buscar mochilas, Riñoneras y más<i class="fa fa-search"></i></div>
+          </i>
+        </div>
+        <h2>
+            <div class="compraencuotas"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y con tarjeta de crédito de todos los bancos</div>
+        </h2>
+        </div>
+
+           
+    <%- include("../partial/navbar") -%>
+</header>
+
+ <main id="irContenido">
+
+ <div class="product-container">
+    <img <%= product.imagen %> alt="Descripción de la imagen">
+</div>   
+
+<div class="product-container" >
+    <a href = "/">Volver a Productos</a>
+    <h2>Articulo: <%= product.articulo%></h2>
+    <p>Modelo <%= product.modelo %> </p>
+    <span >Precio :$ <%= product.precio %> </span>
+    <br>
+
+    <form action="/<%= product.id %>?_method=DELETE" method="POST">
+        <button type="submit" class = "boton">Eliminar</button>
+   </form>
+   
+   <br>
+   <a href = "/<%=product.id%>/edit"><button >Editar Producto</button></a>
+               
+</div>
+
+</main>
+
+
+</body>
+</html>
+
