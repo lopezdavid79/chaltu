@@ -1,7 +1,7 @@
 /* Estilos Generales */
   
   body{
-      background-color: #eaeaeb;
+      background-color: #eaeaea;
   }
   
   /* Estilos de header  */
@@ -344,51 +344,89 @@
       }      
       
   }
-/*redes sociales*/
-  footer .rs-flex-container{
 
-    display:flex ;
-  } 
+  
+  /* Registro y Login*/
+  
+  .logoregister {
+      width: 150px;
+  }
+  
+  .top-header-register {
+      background-color: #e7d26b;
+      padding: 15px;
+      height: 90px;
+  }
+  
+  body .listadoregistro {
+      text-align: center;
+      display:flex;
+      flex-direction: column;
+      margin: 0 auto;
+      border: solid #101215;
+      font-size: 12px;
+      width: 50%;
+      background-color:rgb(234, 246, 167);
+      border-radius: 25px;
+  }
+  
+  .titulo{
+      text-align: center;
+      width: 100%;
+  }
+  
+  body .listadologin {
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 40px;
 
-/* formulario */
-body .listadoform {
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    margin: 0 auto;
-    border: solid #101215;
-    font-size: 12px;
-    width: 50%;
-    background-color:rgb(234, 246, 167);
-    border-radius: 25px;
-}
+  }
+  
+  body div {
+      padding:5px;
+  }
+  
+  body .camposformulario {
+      padding: 5px;
+      margin: 0 auto;
+      border:#666
+  }
+  
+  .cajacelesteregistro{
+      height: 30%;
+      background-color: rgb(12, 9, 9);
+      color: #0044AA;
+      padding: 2%;
+      margin-top: 2%;
+      border: rgb(41, 39, 39);
+  }
+  
+  body .tituloregistro{
+      margin-left:auto;
+      margin-right:auto;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      width: 50%;
+  }
+  header .logoycomprar {
+      display:flex;
+      justify-content: space-between;
+  }
+  
+  .ingresodato{
+      margin-bottom: 3%;
+  }
 
-body .tituloform{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    width: 50%;
-}
+  .botonenviar{
+      transition: all;
+  }
 
-.titulo{
-    text-align: center;
-    width: 100%;
-}
-
-.ingresodato{
-    margin-bottom: 3%;
-}
-
-.botonenviar{
-    transition: all;
-}
-
-.botonenviar :hover{
-  background-color: #0022AA;
-  transition: 1000ms;
-}
-
-.fotodeusuario{
-    border-collapse: collapse;
-}
+  .botonenviar :hover{
+    background-color: #0022AA;
+    transition: 1000ms;
+  }
+  
+  .fotodeusuario{
+      border-collapse: collapse;
+  }

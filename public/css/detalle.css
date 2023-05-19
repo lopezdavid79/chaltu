@@ -113,3 +113,8 @@ body {
 }
 
 }
+/* formularios */
+.botonenviar :hover{
+  background-color: #0022AA;
+  transition: 1000ms;
+}
