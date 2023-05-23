@@ -48,20 +48,26 @@
     <h2>Articulo: <%= product.articulo%></h2>
     <p>Modelo <%= product.modelo %> </p>
     <span >Precio :$ <%= product.precio %> </span>
-    <br>
+    
+<div class="">
+        <button class = "boton">Comprar Ahora</button>
+        <button class = "boton">Agregar al carrito</button>
+        
+        <a href = "/products/<%=product.id%>/edit" role="none"><button >Editar Producto</button></a>
+        <form action="/<%= product.id %>?_method=DELETE" method="POST">
+            <button type="submit" class = "boton">Eliminar</button>
+       </form>
+       
 
-    <form action="/<%= product.id %>?_method=DELETE" method="POST">
-        <button type="submit" class = "boton">Eliminar</button>
-   </form>
-   
-   <br>
-   <a href = "/<%=product.id%>/edit"><button >Editar Producto</button></a>
-               
+    </div>
+    
+
 </div>
 
 </main>
-
-
+<!-- footer -->
+<%- include("../partial/footer") -%>
 </body>
+
 </html>
 

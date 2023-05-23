@@ -12,7 +12,7 @@ const productosController = {
         res.render('products/list',{productos})
     },
     create: (req,res) => {
-        res.render('creacionProd');
+        res.render('products/creacionProd');
     },
 
     stock: (req,res) => {
@@ -47,7 +47,7 @@ const productosController = {
      let producto = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/productos.json')));
      const ProId = req.params.id;
      let editProduct= producto.find(producto=> producto.id == ProId);
-     res.render(path.resolve(__dirname,'../views/edicionProd'), {editProduct});
+     res.render(path.resolve(__dirname,'../views/products/edicionProd'), {editProduct});
     },
 
    update: (req,res) =>{

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chaltu Bags   Inicio </title>
+<title>Chaltu Bags    </title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         rel="stylesheet" />
@@ -34,31 +34,33 @@
 
        
 
-<%- include("./partial/navbar") -%>
+<%- include("../partial/navbar") -%>
 </header>
 
-<div>
-<h2> Completa tus datos</h2> 
+<main> 
 
-    <form action = "/<%=editProduct.id %>?_method=PATCH" method = "POST">
+<div class="tituloform">
+<h2 class="titulo"> Completa tus datos</h2> 
+
+    <form class="listadoform"  action = "/<%=editProduct.id %>?_method=PATCH" method = "POST">
 
                 <div>
-                  <label for="imagen">Imagen</label><br>
+                  <label for="imagen">Imagen</label>
                   <input value = "<%= editProduct.imagen %>" type="file" id="imagen" name="imagen" >
                 </div> 
       
                 <div>
-                  <label for="articulo"> Articulo:</label><br>
+                  <label for="articulo"> Articulo:</label>
                   <input value = "<%= editProduct.articulo %>" type="text" id="articulo" name="articulo" required>
                 </div>        
        
                <div>
-                <label for="modelo">Modelo</label><br>
+                <label for="modelo">Modelo</label>
                 <input value = "<%= editProduct.modelo %>" type="text" id="modelo" name="modelo" required>
               </div>
       
               <div>
-                <label for="precio">Precio</label><br>
+                <label for="precio">Precio</label>
                 <input value = "<%= editProduct.precio %>" type="text" id="precio" name="precio" required>
               </div>
        
@@ -78,6 +80,7 @@
             </div> 
                        
     </form>
-
+  </main>
+  <%- include("../partial/footer") -%>
 </body>
 </html>
