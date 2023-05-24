@@ -21,6 +21,7 @@ const productosController = {
             imagen:req.body.imagen,           
             articulo:req.body.articulo,
             modelo:req.body.modelo,
+            descripcion:req.body.descripcion,
             precio:req.body.precio        
          }
         productos.push(newProduct);
@@ -40,6 +41,7 @@ const productosController = {
 
   		fs.writeFileSync(productosFilePath, JSON.stringify(finalProducts, null, ' '));                  
         res.redirect("/products/list");        
+        location.reload();
 	},
 
     editProd: (req,res)=>{
@@ -84,6 +86,7 @@ const productosController = {
         imagen: editProduct.imagen,
         articulo:  editProduct.articulo,
         modelo: editProduct.modelo,
+        descripcion: editProduct.descripcion,
         precio: editProduct.precio
        
     }; 

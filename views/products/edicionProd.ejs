@@ -51,14 +51,15 @@
       
                 <div>
                   <label for="articulo"> Articulo:</label>
-                  <input value = "<%= editProduct.articulo %>" type="text" id="articulo" name="articulo" required>
+                  <input value = "<%= editProduct.articulo %>" type="text" id="articulo" name="articulo" required autofocus>
                 </div>        
        
                <div>
                 <label for="modelo">Modelo</label>
                 <input value = "<%= editProduct.modelo %>" type="text" id="modelo" name="modelo" required>
               </div>
-      
+              <textarea name="descripcion" id="descripcion" placeholder="ingrese la descripción de su producto "  cols="50" rows="5" ><%= editProduct.descripcion %>  </textarea>
+
               <div>
                 <label for="precio">Precio</label>
                 <input value = "<%= editProduct.precio %>" type="text" id="precio" name="precio" required>
@@ -68,11 +69,11 @@
 
              <div >
                   <br> 
-                   <div>
-                      <input type="submit" value="Aceptar" class = "boton">
+                   <div >
+                      <input type="submit" value="Actualizar" class = "boton">
                    </div>
 
-                         <br>
+                         
                    
                    <div>
                      <a href = "/products/<%=editProduct.id%>"><button class = "boton">Regresar</button></a>

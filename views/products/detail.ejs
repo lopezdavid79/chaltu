@@ -44,11 +44,11 @@
 </div>   
 
 <div class="product-container" >
-    <a href = "/">Volver a Productos</a>
+    <a href = "/products/list">Volver a Productos</a>
     <h2>Articulo: <%= product.articulo%></h2>
     <p>Modelo <%= product.modelo %> </p>
-    <span >Precio :$ <%= product.precio %> </span>
-    
+    <span >$<%= product.precio %> </span>
+    <p><%= product.descripcion%> </p>
 <div class="">
         <button class = "boton">Comprar Ahora</button>
         <button class = "boton">Agregar al carrito</button>
