@@ -35,16 +35,21 @@
     
         
     <main id="irContenido">
-        
+        <div>
+            <h2> PRODUCTOS</h2>
+        </div>
     <% productos.forEach(producto => { %>
         
         <div class="product-container">
             
             <img <%= producto.imagen %> alt="Descripción de la imagen">
-            <h2><a href = "<%=producto.id%>">
+            <h3><a href = "<%=producto.id%>">
                 <%= producto.articulo %>
-            </a> </h2>
-            <p>Modelo <%= producto.modelo %> </p>
+                <%= producto.modelo %>
+            </a> 
+        
+        </h3>
+            
             <p class="precio">Precio : <%= producto.precio %> </p>
             
             <button class="ov-btn-grow-ellipse">Agregar al carrito</button>

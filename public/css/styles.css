@@ -350,6 +350,28 @@
     display:flex ;
   } 
 
+  .botonAgregar , .botonModificar{
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+
+  .botonVolver{
+    color: white;
+    background-color: #00B7FF;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .botonBorrar{
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
 /* formulario */
 body .listadoform {
     text-align: center;

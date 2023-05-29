@@ -34,7 +34,11 @@ const productosController = {
 		let product = productos.find(product => product.id == idProduct)
 	    res.render("products/detail", {id:product.id,product})
      },
-    
+     delete: (req, res) => {
+		let idProduct = req.params.id;
+		let product = productos.find(product => product.id == idProduct)
+	    res.render("products/delete", {id:product.id,product})
+     },   
     destroy: (req, res) => {
 		let id = req.params.id 
 		let finalProducts = productos.filter(producto => producto.id != id) 

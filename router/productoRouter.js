@@ -10,6 +10,7 @@ router.post('/create',productoController.stock);
 
 /*** DETAIL ONE PRODUCT ***/ 
 router.get("/products/:id", productoController.detail)
+router.get("/products/delete/:id", productoController.delete)
 router.delete('/:id', productoController.destroy)
 
 /*** EDIT ONE PRODUCT ***/

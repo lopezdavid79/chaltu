@@ -44,7 +44,7 @@
 </div>   
 
 <div class="product-container" >
-    <a href = "/products/list">Volver a Productos</a>
+    
     <h2>Articulo: <%= product.articulo%></h2>
     <p>Modelo <%= product.modelo %> </p>
     <span >$<%= product.precio %> </span>
@@ -53,12 +53,9 @@
         <button class = "boton">Comprar Ahora</button>
         <button class = "boton">Agregar al carrito</button>
         
-        <a href = "/products/<%=product.id%>/edit" role="none"><button >Editar Producto</button></a>
-        <form action="/<%= product.id %>?_method=DELETE" method="POST">
-            <button type="submit" class = "boton">Eliminar</button>
-       </form>
-       
-
+        <a href = "/products/<%=product.id%>/edit" role="button" class="botonModificar">Editar Producto</a>
+        
+<a href="/products/delete/<%= product.id %>""  class="botonBorrar" role="button">Borrar Producto </a>
     </div>
     
 
