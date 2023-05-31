@@ -1,0 +1,69 @@
+[
+ {
+  "imagen": "",
+  "articulo": "Riñonera ",
+  "modelo": "Ala",
+  "descripcion": "Riñonera Ala, combina con tu día a día para hacer trámites y también para irte de viaje o paseo,¡Es súper resistente y amplia!  ",
+  "precio": "4.770",
+  "id": "1"
+ },
+ {
+  "imagen": "",
+  "articulo": "Mochila",
+  "modelo": "Pampa",
+  "descripcion": "la Mochila Pampa 30lts, es comoda y espaciosa, ideal para personas aventureras ",
+  "precio": "16.970",
+  "id": "2"
+ },
+ {
+  "imagen": "",
+  "articulo": "Mochila ",
+  "modelo": "Athix",
+  "precio": "23654",
+  "id": "3"
+ },
+ {
+  "imagen": "img_riñonera_toro.jpg",
+  "articulo": "riñonera",
+  "modelo": "Toro",
+  "precio": "4442",
+  "id": "4"
+ },
+ {
+  "imagen": "",
+  "articulo": "Botinero",
+  "modelo": "Teo,",
+  "precio": "5339",
+  "id": "5"
+ },
+ {
+  "imagen": "",
+  "articulo": "riñonera",
+  "modelo": "Ligeras ",
+  "precio": "5499",
+  "id": "6"
+ },
+ {
+  "imagen": "",
+  "articulo": "Mini Bags",
+  "modelo": "Piedra",
+  "descripcion": "El mini bags piedra es ideal para llevar tus objetos personales    , es un producto premiun .",
+  "precio": "6999",
+  "id": "7"
+ },
+ {
+  "id": 8,
+  "imagen": "img_Mochila_Aguila.webp",
+  "articulo": "Mochila ",
+  "modelo": "Aguila",
+  "precio": "25450"
+ },
+ {
+  "imagen": "",
+  "articulo": "bolso",
+  "modelo": "tigre",
+  "descripcion": " es super libiana    ",
+  "precio": "22550",
+  "id": "9"
+ }
+]
